@@ -1,0 +1,31 @@
+.container {
+  padding: 60px;
+  width: 100%;
+}
+
+.search {
+  width: 400px;
+  margin-bottom: 40px;
+  & label {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.result__name {
+  display: flex;
+  justify-content: center;
+  h2 {
+    font-size: 3em;
+  }
+}
+.result__country {
+  display: flex;
+  justify-content: space-around;
+}
+.country-found {
+  list-style: none;
+}
+.contry-item {
+  font-size: 18px;
+  font-weight: bold;
+}

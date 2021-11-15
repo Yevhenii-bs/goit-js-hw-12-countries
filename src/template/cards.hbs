@@ -1,0 +1,21 @@
+{{#each country}}
+  <article class='country'>
+
+    <div class='wrapper'>
+      <h3 class='name-country'>{{name}}</h3>
+      <img src='{{flags.svg}}' alt='{{name}}' style='width:100%' />
+      <ul class='characters-country'>
+        <li class='chapter'><span>Capital: </span><span class='property'>{{capital}}</span></li>
+        <li class='chapter'><span>population: </span><span
+            class='property'
+          >{{population}}</span></li>
+        <li class='chapter'><p class='title'>languages:</p>
+          <ul>
+            {{#each languages}}
+              <li class='property'>{{name}}</li>
+            {{/each}}
+          </ul></li>
+      </ul>
+    </div>
+  </article>
+{{/each}}
